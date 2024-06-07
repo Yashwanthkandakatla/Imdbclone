@@ -22,10 +22,10 @@ function App() {
   //   console.log('Use Effect Runs')
   //   document.title = `button clicked for ${count} times`
   // })
-  useEffect(() => {
-    console.log("Use Effect Runs");
-    document.title = `button clicked for ${count} times`;
-  }, [count]);
+  // useEffect(() => {
+  //   console.log("Use Effect Runs");
+  //   document.title = `button clicked for ${count} times`;
+  // }, [count]);
   let [watchlist, setwatchlist] = useState([]);
   let handleaddto = (movieobj) => {
     let newwatchlist = [...watchlist, movieobj];
@@ -82,11 +82,11 @@ function App() {
         </Routes>
       </BrowserRouter>
 
-      <h1>The increament Function is </h1>
+      {/* <h1>The increament Function is </h1>
       <h2>The count is : {count}</h2>
       <input onChange={handlechange} type="text" value={val}></input>
       <h2>{val}</h2>
-      <button onClick={incrementcount}>Increament</button>
+      <button onClick={incrementcount}>Increament</button> */}
     </>
   );
 }
